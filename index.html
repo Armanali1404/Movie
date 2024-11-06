@@ -199,7 +199,7 @@ const movieData = (data) => {
 const myApiKey = "6682055c";
 const getFact = async (movie) => {
   let response = await fetch(
-    `http://www.omdbapi.com/?apikey=${myApiKey}&t=${movie}`
+    `https://www.omdbapi.com/?apikey=${myApiKey}&t=${movie}`
   );
   let data = await response.json();
   movieData(data);
